@@ -42,7 +42,7 @@ def run():
         print("Type the message querry or problem to procced further  || To Close Press 'ESC' key")
         qry=qery()
         
-        if 'wikipedia' in qry:
+        if 'wikipedia' in qry  or 'Wikipedia' in qry or 'WIKIPEDIA' in qry :
             # tk1
             qryf=qry
             try:
@@ -53,16 +53,23 @@ def run():
             except wikipedia.exceptions.WikipediaException as e:
                 print(e)
                 dic('Wikipedia can not find it or server connection error ')
-                break
+                
                 
 
-
-        elif 'youtube'or'Youtube'or'YOUTUBE'  in qry: 
+        if 'youtube' in qry: 
             # tk2   
             dic("opening   youtube")
             qryf=qry.replace('youtube','')
             webbrowser.open(url=f"https://www.youtube.com/results?search_query={qryf}")
 
+        else:
+            try:
+                qryf=qry
+                webbrowser.open_new(url=f'https://www.google.com/search?q={qryf}')
+            except:
+                print('Sorry for the inconvenience || by-ghatiya developer ')
+        
+        
         
         # elif '' in qry:
             # tk3
@@ -76,9 +83,3 @@ def run():
         #     #    
         # else :
         #     start() 
-        else:
-            try:
-                qryf=qry
-                webbrowser.open_new(url=f'https://www.google.com/search?q={qryf}')
-            except:
-                print('Sorry for the inconvenience || by-ghatiya developer ')
