@@ -35,7 +35,6 @@ def run():
     # qryf = filtered query
     # iv=qery()
     
-    
     speak('Type the message querry or problem to pruh·seed further')
     
     while True:
@@ -43,7 +42,7 @@ def run():
         print("Type the message querry or problem to procced further  || To Close Press 'ESC' key")
         qry=qery()
         
-        if 'wikipedia'or'Wikipedia'or'WIKIPEDIA' in qry:
+        if 'wikipedia' in qry:
             # tk1
             qryf=qry
             try:
@@ -83,4 +82,3 @@ def run():
                 webbrowser.open_new(url=f'https://www.google.com/search?q={qryf}')
             except:
                 print('Sorry for the inconvenience || by-ghatiya developer ')
-    run()

@@ -54,7 +54,7 @@
 # # write samples to the file
 # wav_file.writeframes(input_audio)
 
-import pyttsx3
+# import pyttsx3
 
 # def speak_hindi(text):
 #     engine = pyttsx3.init()
@@ -153,4 +153,4 @@ import pyttsx3
 import task as tk
 # qry=tk.qery()
 # print(qry)
-tk.run()
+tk.run() 
