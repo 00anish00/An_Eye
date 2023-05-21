@@ -1,1 +1,0 @@
-wd\\deV\\prs\\exe_control.py
