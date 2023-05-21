@@ -8,5 +8,3 @@ def dots():
         for col in range(column):
             time.sleep(0.001)
             print("('.')......", end="")
-
-# dots()

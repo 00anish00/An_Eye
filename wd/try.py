@@ -150,7 +150,176 @@
 # print()  # Move to the next line after all dots are displayed
 
 
+# import task as tk
+# # qry=tk.qery()
+# # print(qry)
+# tk.run() 
+
+# import keyboard
+
+# def on_key(event):
+#     if event.name == 'esc':
+#         print("Escape key pressed. Exiting...")
+#         # Add your code to handle the Esc key press event
+#         keyboard.unhook_all()  # Stop listening for key events
+#         exit()
+# keyboard.on_press()
+# keyboard.wait()  # Wait for any key press
+# a=keyboard.get_hotkey_name()
+# if  a =='esc':
+#     exit()
+
+# import keyboard
+
+# def press(key):
+#     if key.name == 'esc':
+#         print("esc key pressed.")
+#         return 'esc'
+        
+# keyboard.on_press(press)
+# keyboard.wait()
+
+
+
+
+
+
+
+
+
+
+
+# Processing dots *
+# import process_dots as pd
+# def dots():
+#     pd.dots()
+
+# # Output audio *
+# import voiceoutput as vc
+# def speak(text):
+#     vc.spk(text)
+
+# # text insert taker *
+# def qery():
+#     a=str(input("enter.....:"))
+#     return a
+
+# # write and speak at a time
+# import speakandwrite as sw
+# def dic(text):
+#     sw.dictate(text)
+
+# # ---------------modules_imported_and_created---------------------------------------------------------------------------------------
+# # ------------------------------------task-modules-------------------------------------------------------------
+
+# # tk1
+# import wikipedia
+# # tk2
+# import webbrowser
+# # tk exit
+# import keyboard
+# import sys
+# import time
+
+
+
+
+# def run():
+    
+#     # qryf = filtered query
+#     # iv=qery()
+    
+#     # speak('Type the message querry or problem to pruh·seed further')
+    
+#     while True:
+        
+#         print("Type the message querry or problem to procced further  || To Close Press 'ESC' key")
+#         # keyboard.wait(3)
+#         if keyboard.is_pressed('q'):
+#             print('Have a good time')
+#             time.sleep(2)
+#             sys.exit()
+#         else:
+#             qry=qery()
+
+#             if 'wikipedia' in qry  or 'Wikipedia' in qry or 'WIKIPEDIA' in qry :
+#                 # tk1
+#                 qryf=qry
+#                 try:
+#                     results = wikipedia.summary(qryf,sentences=4)
+#                     dic("As per the wikipedia",)
+#                     dic(results)
+
+#                 except wikipedia.exceptions.WikipediaException as e:
+#                     print(e)
+#                     dic('Wikipedia can not find it or server connection error ')
+
+
+#             if 'youtube' in qry: 
+#                 # tk2   
+#                 dic("opening   youtube")
+#                 qryf=qry.replace('youtube','')
+#                 webbrowser.open(url=f"https://www.youtube.com/results?search_query={qryf}")
+
+
+
+
+
+#             else:
+#                 try:
+#                     qryf=qry
+#                     webbrowser.open_new(url=f'https://www.google.com/search?q={qryf}')
+#                 except:
+#                     print('Sorry for the inconvenience || by-ghatiya developer ')
+
+
+
+
+
+
+
+# achiving wd files
+import sys
+sys.path.append("wd")
+
+# speaker
+import voiceoutput as vc
+def speak(aud):
+    vc.spk(aud)
+
+# task runner 
 import task as tk
-# qry=tk.qery()
-# print(qry)
-tk.run() 
+
+# dots
+import process_dots as pd
+def dots():
+    pd.dots()
+
+
+# write and speak at a time
+import speakandwrite as sw
+def dic(text):
+    sw.dictate(text)
+
+
+if __name__ =='__main__':
+    # while True:
+    print('YOU ARE USING AN_EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
+    print("_A___R__")
+    speak('             YOU ARE USING N EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
+    dots()
+    while True:    
+        speak('Type "Start" To Continue or "exit" To Quit')
+        userinput=input("\nType 'Start' To Continue  || 'exit' To Quit\nType here:.....")
+        if 'start' in userinput or 'Start' in userinput or 'START' in userinput:
+            dots()
+            tk.run()
+            break
+        if 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput:
+            dic("\nByee")
+            dots()
+            sys.exit()
+
+            # else:
+            #     dic("Please Try Again\n")
+            #     dots()
