@@ -88,7 +88,7 @@ def run():
             dic("Opening Browser")
             dots()
             webbrowser.open_new(url=f'https://www.google.com/search?q={qryf}')
-            print('Sorry for the inconvenience || by-ghatiya developer ')
+            # print('Sorry for the inconvenience || by-ghatiya developer ')
         
         
         

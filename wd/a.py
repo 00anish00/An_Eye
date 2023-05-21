@@ -23,7 +23,6 @@ def dic(text):
 
 
 if __name__ =='__main__':
-    # while True:
     print('YOU ARE USING AN_EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
     print("_A___R__")
     speak('             YOU ARE USING N EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
@@ -39,7 +38,6 @@ if __name__ =='__main__':
             dic("\nByee")
             dots()
             sys.exit()
-
-            # else:
-            #     dic("Please Try Again\n")
-            #     dots()
+        else:
+            dic("Please Try Again\n")
+            dots()
