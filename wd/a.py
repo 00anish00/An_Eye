@@ -34,7 +34,7 @@ if __name__ =='__main__':
             dots()
             tk.run()
             break
-        if 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput:
+        elif 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput:
             dic("\nByee")
             dots()
             sys.exit()
