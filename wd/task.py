@@ -47,6 +47,8 @@ import webbrowser
 # tk htr
 # tk jc
 # tk vt
+# tk cl
+import calculator as cl
 
 
 # tk win 11 
@@ -369,7 +371,20 @@ def run():
             webbrowser.open(url="https://www.voot.com/")
             print()
 
-
+# ----------------------------------------------------------------------------------------
+# --------------------------py-work------------------------------
+        elif 'calculator' in qry or ('+'or'-'or'*'or'/')  in qry:
+            # tk cl
+            if qry =='calculator':
+                dic('calculator----')
+                dots()
+                cl.cal()
+            else:
+                dic('calculating----')
+                dots()
+                print()
+                cl.start_calc(qry)
+                
 # --------------SYSYTEM AND EXCEPTION-----------
         elif 'windows 11' in qry:
             # tk w11

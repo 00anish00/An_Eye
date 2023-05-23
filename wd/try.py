@@ -307,10 +307,12 @@
             #     dots()
 
 
+# import subprocess
+
+# subprocess.Popen('settings.exe')
+
 
 
 import task as tk
-# qry=tk.qery()
-# print(qry)
 tk.run() 
 
