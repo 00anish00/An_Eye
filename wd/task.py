@@ -31,19 +31,31 @@ import wikipedia
 # tk gpt
 # tk yt
 import webbrowser
+# tk ig
+# tk fb
+# tk tt
+# tk li
+# tk id
+# tk wh
+# tk sc
 # tk spt
 # tk flp
 # tk mt
 # tk bk
 # tk amz
+# tk nfx
 # tk htr
+# tk jc
+# tk vt
 
 
-
+# tk win 11 
+# tk ms 
 # tk E
 import sys
 # tk EL
 import webbrowser
+
 
 
 # ...................................................................................................................................
@@ -89,8 +101,10 @@ def run():
                 
         # -------------------------------
         # -------------related to google------------
-        elif 'youtube' in qry: 
+        elif 'youtube' in qry or 'yt'in qry: 
             # tk yt
+            if 'yt' in qry:
+                qry=qry.replace('yt','youtube')
             if qry=='youtube':
                 dic("opening   youtube")
                 dots()
@@ -121,14 +135,102 @@ def run():
                     qryf=qry.replace('youtube','')
                     webbrowser.open(url=f"https://www.youtube.com/results?search_query={qryf}")
                     print()
-        
-        # ------------
+        # -----------------------------------
+        # ---------------------social-media------------------------
+        elif 'instagram' in qry:
+            # tk ig
+            if qry=='instagram':
+                dic("opening   instagram ")
+                dots()
+                webbrowser.open(url=f"https://www.instagram.com/")
+                print()
+            else:
+                dic("opening   instagram")
+                dots()
+                qryf=qry.replace('instagram','')
+                webbrowser.open(url=f"https://www.instagram.com/{qryf}")
+                print()
+        elif 'facebook' in qry:
+            # tk fb
+            if qry=='facebook':
+                dic("opening   facebook ")
+                dots()
+                webbrowser.open(url=f"https://www.facebook.com/")
+                print()
+            else:
+                dic("opening   facebook")
+                dots()
+                qryf=qry.replace('facebook','')
+                webbrowser.open(url=f"https://www.facebook.com/{qryf}")
+                print()
+        elif 'twitter' in qry:
+            # tk tt
+            if qry=='twitter':
+                dic("opening   twitter ")
+                dots()
+                webbrowser.open(url=f"https://www.twitter.com/")
+                print()
+            else:
+                dic("opening   twitter")
+                dots()
+                qryf=qry.replace('twitter','')
+                webbrowser.open(url=f"https://www.twitter.com/{qryf}")
+                print()
+        elif 'linked in' in qry:
+            # tk li
+            if qry=='linked in':
+                dic("opening   linked in ")
+                dots()
+                webbrowser.open(url=f"https://www.linkedin.com")
+                print()
+            else:
+                dic("opening   linked in")
+                dots()
+                qryf=qry.replace('linked in','')
+                webbrowser.open(url=f"https://www.linkedin.com/search/results/all/?keywords={qryf}")
+                print()
+        elif 'indeed' in qry:
+            # tk id
+            if qry=='indeed':
+                dic("opening   indeed ")
+                dots()
+                webbrowser.open(url=f"https://in.indeed.com/")
+                print()
+            else:
+                dic("opening   indeed")
+                dots()
+                qryf=qry.replace('indeed','')
+                webbrowser.open(url=f"https://in.indeed.com/jobs?q={qryf}")
+                print()
+        elif 'whatsapp' in qry:
+            # tk wh
+            if qry=='whatsapp web':
+                dic("opening   whatsapp web ")
+                dots()
+                webbrowser.open(url="https://web.whatsapp.com/")
+                print()
+            else:
+                dic("opening   whatsapp  ")
+                dots()
+                webbrowser.open(url="https://www.whatsapp.com/")
+                print()
+
+        elif 'snapchat' in qry:
+            # tk sc
+                dic("opening   snapchat ")
+                dots()
+                webbrowser.open(url=f"https://www.snapchat.com/")
+                print()
+            
+        # -----------------------------------------------------------------
+        # ------------songs------------
         elif 'spotify' in qry: 
             # tk spt
             # try:
             #     os._path.dirname('"C:\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Spotify.lnk"')
             if qry=='spotify':
                 dic("opening   spotify ")
+                dots()
                 webbrowser.open(url=f"https://open.spotify.com/")
                 print()
             else:
@@ -228,6 +330,7 @@ def run():
                     webbrowser.open(url=f"https://www.amazon.in/s?k={qryf}")
                     print()
         # ---------streaming----ott----------
+
         elif 'netflix' in qry: 
         # tk nfx
             dic("opening   Netflix ")
@@ -245,12 +348,11 @@ def run():
                 print()
             else :
                 qryf=qry.replace('hotstar','')
-                dic()
+                dic('opening   hotstar')
                 dots()
-                webbrowser.open(url=f"https://www.hotstar.com/in/explore?search_query={qryf}")
+                webbrowser.open(url=f"https://www.hotstar.com/in/explore?is_paywall_onboarding=true&search_query={qryf}")
                 print()
         # prime already given
-        # jio cinema
         
         elif 'jio cinema' in qry:
         # tk jc
@@ -269,6 +371,27 @@ def run():
 
 
 # --------------SYSYTEM AND EXCEPTION-----------
+        elif 'windows 11' in qry:
+            # tk w11
+            dic("opening   windows 11")
+            dots()
+            webbrowser.open(url="https://www.microsoft.com/software-download/windows11")
+
+        elif 'microsoft store' in qry:
+            # tk ms
+            if qry=='microsoft store':
+                dic("opening   microsoft store")
+                dots()
+                webbrowser.open(url="https://apps.microsoft.com/store/")
+            else:
+                qryf=qry.replace('microsoft store','')
+                dic("opening   microsoft store")
+                dots()
+                webbrowser.open(url=f"https://apps.microsoft.com/store/search/{qryf}")
+            
+
+
+                
         elif 'exit' in qry or 'Exit' in qry or 'EXIT'in qry:
             # tk E
             dic("\nByee")

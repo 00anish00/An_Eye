@@ -10,4 +10,4 @@ from cx_Freeze import setup, Executable
 setup(name = 'An_Eye',
 	version = '0.2.5' ,
 	description = 'des' ,
-	executables = [Executable('E:\\VSC\\Interst\\#ANAI\\T2\\An_Eye\\wd\\modules.py')])
+	executables = [Executable('E:\\VSC\\Interst\\#ANAI\\T2\\An_Eye\\wd\\a.py')])
