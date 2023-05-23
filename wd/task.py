@@ -372,6 +372,33 @@ def run():
             print()
 
 # ----------------------------------------------------------------------------------------
+# ------------------------------CUTM----------------------------------------
+        elif 'cutm' in qry :
+            # tk cl
+            if 'erp' in qry :
+                dic('opening cutm erp')
+                dots()
+                webbrowser.open(url="https://cutm.icloudems.com/corecampus/index.php")
+                print()
+            elif 'perfectise' in qry :
+                dic('opening cutm perfectise')
+                dots()
+                webbrowser.open(url="https://cutm.icloudems.com/corecampus/index.php")
+                print()
+            
+            elif 'courseware' in qry :
+                dic('opening cutm cousrseware')
+                dots()
+                webbrowser.open(url="https://courseware.cutm.ac.in/")
+                print()
+            
+            else :
+                dic('opening cutm ')
+                dots()
+                webbrowser.open(url="https://cutmbol.com/")
+                print()
+            
+            
 # --------------------------py-work------------------------------
         elif 'calculator' in qry or ('+'or'-'or'*'or'/')  in qry:
             # tk cl
@@ -384,6 +411,7 @@ def run():
                 dots()
                 print()
                 cl.start_calc(qry)
+                print()
                 
 # --------------SYSYTEM AND EXCEPTION-----------
         elif 'windows 11' in qry:
