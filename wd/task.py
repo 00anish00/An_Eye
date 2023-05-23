@@ -276,9 +276,9 @@ def run():
             dots()
             sys.exit()
         
-        elif 'date' in qry or 'time ' in qry:
-            if qry=='date' or 'time':
-                wishme()
+        # elif 'date' in qry or 'time ' in qry:
+        #     if qry=='date' or 'time':
+        #         wishme()
 
         else:
             # tk EL
