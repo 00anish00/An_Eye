@@ -47,6 +47,7 @@ import webbrowser
 # tk htr
 # tk jc
 # tk vt
+# tk ctm
 # tk cl
 import calculator as cl
 
@@ -374,7 +375,7 @@ def run():
 # ----------------------------------------------------------------------------------------
 # ------------------------------CUTM----------------------------------------
         elif 'cutm' in qry :
-            # tk cl
+            # tk ctm
             if 'erp' in qry :
                 dic('opening cutm erp')
                 dots()
