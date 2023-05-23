@@ -41,10 +41,11 @@ def date():
 
 def time():
     time=(datetime.datetime.now().hour)
-    dic(f"{time}O' Clock")
+    dic(f"{time} -O' Clock")
     
-def wish():
-    w_time()
-    t=time().time
-    dic(f"The Time is{t} 'O clock")
-wish()
+# def wish():
+#     w_time()
+#     t=time().time
+#     dic(f"The Time is{t} 'O clock")
+def m_wish():
+    date(),time(),w_time()

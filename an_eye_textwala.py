@@ -14,7 +14,7 @@ import task as tk
 import process_dots as pd
 def dots():
     pd.dots()
-
+import wisher as ws
 
 # write and speak at a time
 import speakandwrite as sw
@@ -23,6 +23,7 @@ def dic(text):
 
 
 if __name__ =='__main__':
+    ws.m_wish()
     print('YOU ARE USING AN_EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
     print("_A___R__")
     speak('             YOU ARE USING N EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
