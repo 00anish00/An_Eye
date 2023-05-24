@@ -1,3 +1,8 @@
+# achiving wd files
+import sys
+sys.path.append("wd")
+
+# speaker
 import voiceoutput as vc
 def speak(aud):
     vc.spk(aud)
@@ -9,43 +14,32 @@ import task as tk
 import process_dots as pd
 def dots():
     pd.dots()
-
+import wisher as ws
 
 # write and speak at a time
 import speakandwrite as sw
 def dic(text):
     sw.dictate(text)
 
-import time
 
-
-import datetime
-# WISH MODULE
-def w_time():
-    hour = int(datetime.datetime.now().hour)
-    wish=""
-    if hour == 6 and hour<12:
-        wish=("GOOD MORNING ")
-    elif hour == 0 and hour <6:
-        wish=("GOOD NIGHT")
-    elif hour==12 and hour<18:
-        wish=("GOOD AFTERNOON")
-    else :
-        wish=("GOOD EVENING")
-    dic(wish)
-
-def date():
-    date=datetime.datetime.now().date()
-    dic(date)
-    
-
-def time():
-    time=(datetime.datetime.now().hour)
-    dic(f"{time} -O' Clock")
-    
-# def wish():
-#     w_time()
-#     t=time().time
-#     dic(f"The Time is{t} 'O clock")
-def m_wish():
-    date(),time(),w_time()
+if __name__ =='__main__':
+    ws.m_wish()
+    print('YOU ARE USING AN_EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
+    print("_A___R__")
+    speak('             YOU ARE USING N EYE A POTENTIAL PERSONAL ASSISTANT BROWSING SYSTEM FOR YOUR PERSONAL COMPUTER')
+    dots()
+    while True:    
+        speak('Type "Start" To Continue or "exit" To Quit')
+        userinput=input("\nType 'Start' To Continue  || 'exit' To Quit\nType here:.....")
+        if 'start' in userinput or 'Start' in userinput or 'START' in userinput or 'a' in userinput:
+            dots()
+            tk.run()
+            break
+        elif 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput or 'q' in userinput:
+            dic("\nByee\n")
+            dic('jay shree raaam')
+            dots()
+            sys.exit()
+        else:
+            dic("Please Try Again\n")
+            dots()

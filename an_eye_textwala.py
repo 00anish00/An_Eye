@@ -31,12 +31,13 @@ if __name__ =='__main__':
     while True:    
         speak('Type "Start" To Continue or "exit" To Quit')
         userinput=input("\nType 'Start' To Continue  || 'exit' To Quit\nType here:.....")
-        if 'start' in userinput or 'Start' in userinput or 'START' in userinput:
+        if 'start' in userinput or 'Start' in userinput or 'START' in userinput or 'a' in userinput:
             dots()
             tk.run()
             break
-        elif 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput:
-            dic("\nByee")
+        elif 'exit' in userinput or 'Exit' in userinput or 'EXIT'in userinput or 'q' in userinput:
+            dic("\nByee\n")
+            dic('jay shree raaam')
             dots()
             sys.exit()
         else:

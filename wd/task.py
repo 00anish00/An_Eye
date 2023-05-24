@@ -438,7 +438,8 @@ def run():
                 
         elif 'exit' in qry or 'Exit' in qry or 'EXIT'in qry:
             # tk E
-            dic("\nByee")
+            dic("\nByee\n")
+            dic('jay shree raaam')
             print("_A___R__")
             dots()
             sys.exit()
