@@ -49,4 +49,3 @@ def time():
 #     dic(f"The Time is{t} 'O clock")
 def m_wish():
     date(),time(),w_time()
-w_time()
