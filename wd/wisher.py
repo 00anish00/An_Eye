@@ -24,11 +24,11 @@ import datetime
 def w_time():
     hour = int(datetime.datetime.now().hour)
     wish=""
-    if hour == 6 and hour<12:
+    if hour >= 6 and hour<=12:
         wish=("GOOD MORNING ")
-    elif hour == 0 and hour <6:
+    elif hour >= 0 and hour <=6:
         wish=("GOOD NIGHT")
-    elif hour==12 and hour<18:
+    elif hour>=12 and hour<=18:
         wish=("GOOD AFTERNOON")
     else :
         wish=("GOOD EVENING")
@@ -49,3 +49,4 @@ def time():
 #     dic(f"The Time is{t} 'O clock")
 def m_wish():
     date(),time(),w_time()
+w_time()
