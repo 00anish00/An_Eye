@@ -311,10 +311,85 @@
 
 # subprocess.Popen('settings.exe')
 
+# import speakandwrite as sw
+# import voiceoutput as vc
+# import datetime
+
+# def dic(text):
+#     sw.dictate(text)
+
+# def w_time():
+#     now = datetime.datetime.now()
+#     hour = now.hour
+#     minute = now.minute
+#     suffix = "AM" if hour < 12 else "PM"
+#     if hour > 12:
+#         hour -= 12
+#     elif hour == 0:
+#         hour = 12
+#     if minute < 10:
+#         minute = f"0{minute}"
+    
+#     month = now.strftime("%B")
+#     day = now.day
+#     year = now.year
+#     weekday = now.strftime("%A")
+
+#     wish = ""
+#     if hour >= 6 and hour < 12:
+#         wish = "GOOD MORNING"
+#     elif hour == 12 and minute == 0:
+#         wish = "GOOD AFTERNOON"
+#     elif hour >= 12 and hour < 17:
+#         wish = "GOOD AFTERNOON"
+#     elif hour >= 17 and hour < 20:
+#         wish = "GOOD EVENING"
+#     else:
+#         wish = "GOOD NIGHT"
+
+#     dic(f"{wish}, today is {weekday}, {month} {day}, {year}, and the time is {hour}:{minute} {suffix}")
+
+# w_time()
+import speakandwrite as sw
+import datetime
+
+def dic(text):
+    sw.dictate(text)
+
+def get_time_greeting(hour):
+    if hour >= 6 and hour < 12:
+        return "GOOD MORNING"
+    elif hour >= 12 and hour < 17:
+        return "GOOD AFTERNOON"
+    elif hour >= 17 and hour < 20:
+        return "GOOD EVENING"
+    else:
+        return "GOOD NIGHT"
+
+def w_time():
+    now = datetime.datetime.now()
+    hour = now.hour
+    minute = now.minute
+    suffix = "AM" if hour < 12 else "PM"
+    if hour >= 12:
+        hour -= 12
+    if hour == 0:
+        hour = 12
+    if minute < 10:
+        minute = f"0{minute}"
+
+    month = now.strftime("%B")
+    day = now.day
+    year = now.year
+    weekday = now.strftime("%A")
+
+    greeting = get_time_greeting(hour)
+    dic(f"{greeting}, today is {weekday}, {month} {day}, {year}, and the time is {hour}:{minute} {suffix}")
+
+w_time()
 
 
-
-import task as tk
-tk.run() 
+# import task as tk
+# tk.run() 
 # import subprocess
 # path=subprocess.run(['cd', '"E:\VSC\Interst\#ANAI\T2\An_Eye\wd"'])
